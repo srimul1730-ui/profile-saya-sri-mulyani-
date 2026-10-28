@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff5f8">
+<title>Profile Sri Mulyani</title>
+<style>
+:root{--pink:#d96f98;--pink2:#f4b8ce;--pale:#fff2f7;--ink:#533b48;--muted:#927987;--white:#fff;--line:#f4dce6}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family: "Segoe UI",Arial,sans-serif;color:var(--ink);background:#fffafb;line-height:1.75}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1080px,90%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{font-weight:850;font-size:23px;letter-spacing:-1px;color:var(--pink)}
+.logo span{color:#b84f7b}
+.links{display:flex;list-style:none;gap:23px;flex-wrap:wrap}
+.links a{font-size:13px;font-weight:700;transition:.2s}
+.links a:hover{color:var(--pink)}
+.hero{padding:78px 0 66px;overflow:hidden;background:radial-gradient(circle at 88% 18%,#fce0eb 0,transparent 28%),radial-gradient(circle at 8% 90%,#ffedf4 0,transparent 28%),#fff8fb}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+.tag{display:inline-block;background:white;border:1px solid var(--line);color:#b84f7b;padding:6px 14px;border-radius:30px;font-size:12px;font-weight:800;letter-spacing:.5px}
+h1{font-size:clamp(39px,6vw,66px);line-height:1.12;letter-spacing:-2px;margin:20px 0}
+h1 span{color:var(--pink)}
+.intro{max-width:520px;color:var(--muted);font-size:15px;margin-bottom:26px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 21px;border-radius:30px;font-size:13px;font-weight:800;display:inline-block;transition:.25s}
+.primary{background:var(--pink);color:white;box-shadow:0 8px 20px #d96f982e}
+.primary:hover{transform:translateY(-3px);background:#c85c86}
+.secondary{border:1px solid #e9b4c9;background:white;color:#b84f7b}
+.secondary:hover{background:var(--pale)}
+.art{display:flex;align-items:center;justify-content:center;min-height:290px}
+.flower-circle{width:245px;height:245px;border-radius:50%;background:linear-gradient(145deg,#ffe8f0,#eaa1bd);display:grid;place-items:center;position:relative;box-shadow:0 22px 55px #d887a426}
+.flower-inner{width:190px;height:190px;border-radius:50%;background:#fff9fb;border:3px solid white;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.flower-inner .flower{font-size:68px;line-height:1.3}
+.flower-inner small{font-size:11px;color:#b84f7b;font-weight:800}
+.deco{position:absolute;font-size:31px}.heart{top:5px;right:-3px}.sparkle{bottom:5px;left:-5px}
+section.content{padding:72px 0;scroll-margin-top:85px}
+.heading{text-align:center;margin-bottom:34px}
+.eyebrow{font-size:11px;font-weight:850;letter-spacing:3px;text-transform:uppercase;color:#b84f7b}
+.heading h2{font-size:clamp(27px,4vw,36px);line-height:1.35;margin:8px 0}
+.heading p{font-size:14px;color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:white;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 9px 30px #dba4b412;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 15px 35px #dba4b425}
+.card h3{font-size:19px;margin-bottom:12px}
+.card p{font-size:14px;color:var(--muted)}
+.info{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #f8eaf0;font-size:13px}
+.info:last-child{border:0}.info span{color:var(--muted)}.info strong{text-align:right;overflow-wrap:anywhere}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.interest{text-align:center;background:white;border:1px solid var(--line);border-radius:20px;padding:27px 20px;transition:.25s}
+.interest:hover{transform:translateY(-5px);background:#fff4f8}
+.icon{width:62px;height:62px;border-radius:20px;background:var(--pale);display:grid;place-items:center;font-size:17px;letter-spacing:2px;font-weight:800;color:var(--pink);margin:0 auto 13px}
+.interest h3{font-size:16px;margin-bottom:7px}.interest p{font-size:13px;color:var(--muted)}
+.skills-box{background:linear-gradient(135deg,#fff0f5,#fce5ee);border:1px solid var(--line);border-radius:24px;padding:32px 20px;text-align:center}
+.skills-box h3{margin-bottom:19px}
+.skills{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}
+.skill{background:white;border:1px solid #f3d6e2;border-radius:30px;padding:8px 15px;font-size:13px;font-weight:700;color:#b84f7b}
+.goal{text-align:center;background:white;border:1px solid var(--line);border-radius:24px;padding:35px 26px}
+.goal-mark{display:inline-block;font-size:11px;letter-spacing:4px;font-weight:850;color:#b84f7b;background:#fff2f7;border:1px solid var(--line);border-radius:30px;padding:8px 15px;margin-bottom:8px}.goal h3{font-size:23px;margin:8px 0 10px}.goal p{max-width:650px;margin:auto;color:var(--muted);font-size:14px}
+footer{background:#624353;color:white;text-align:center;padding:28px 15px}
+footer h3{font-size:20px;margin-bottom:4px}footer p{font-size:12px;color:#f6dce7}
+@media(max-width:720px){
+ nav{padding:14px 0;flex-direction:column;gap:9px}
+ .links{justify-content:center;gap:8px 16px}.links a{font-size:12px}
+ .hero{padding:52px 0 35px}.hero-grid{grid-template-columns:1fr;text-align:center;gap:4px}
+ .intro{margin-left:auto;margin-right:auto}.actions{justify-content:center}
+ .art{min-height:240px}.flower-circle{width:205px;height:205px}.flower-inner{width:160px;height:160px}.flower-inner .flower{font-size:53px}
+ section.content{padding:54px 0;scroll-margin-top:125px}
+ .grid2,.grid3{grid-template-columns:1fr}.card{padding:23px}.goal{padding:28px 20px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <nav class="wrap">
+    <a class="logo" href="#beranda">Profile <span>Sri Mulyani</span></a>
+    <ul class="links">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#minat">Minat</a></li>
+      <li><a href="#keahlian">Keahlian</a></li>
+      <li><a href="#cita-cita">Cita-cita</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="hero" id="beranda">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="tag">♡ WELCOME TO MY WEBSITE</span>
+        <h1>Little Things,<br><span>Big Dreams.</span></h1>
+        <p class="intro">Halo! Selamat datang di website profilku. Tempat untuk mengenal diriku, minat, keahlian, dan mimpi yang ingin aku capai.</p>
+        <div class="actions">
+          <a class="btn primary" href="#tentang">Kenali Aku</a>
+          <a class="btn secondary" href="#cita-cita">My Dreams</a>
+        </div>
+      </div>
+      <div class="art" aria-label="Ilustrasi bunga dekoratif">
+        <div class="flower-circle">
+          <span class="deco heart">+</span>
+          <div class="flower-inner"><span class="flower">✿</span><small>MY PERSONAL PROFILE</small></div>
+          <span class="deco sparkle">✧</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content" id="tentang">
+    <div class="wrap">
+      <div class="heading"><span class="eyebrow">GET TO KNOW ME</span><h2>A Little About Me</h2><p>Beberapa hal sederhana tentang diriku.</p></div>
+      <div class="grid2">
+        <article class="card">
+          <h3>Hai, aku di sini!</h3>
+          <p>Aku seorang pelajar yang suka mempelajari hal baru, terutama di bidang teknologi. Bagiku, setiap pengalaman adalah kesempatan untuk tumbuh, mencoba, dan menjadi lebih baik.</p><br>
+          <p>Aku ingin terus mengembangkan kemampuan dan berani mencoba hal-hal baru untuk mewujudkan impianku.</p>
+        </article>
+        <article class="card">
+          <h3>My Profile</h3>
+          <div class="info"><span>Nama</span><strong>Sri Mulyani</strong></div>
+          <div class="info"><span>Kelas</span><strong>XI TJKT 1</strong></div>
+          <div class="info"><span>Sekolah</span><strong>SMK Negeri 3 Depok</strong></div>
+          <div class="info"><span>Bidang</span><strong>Teknologi</strong></div>
+          <div class="info"><span>Motto</span><strong>Keep Growing</strong></div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="content" id="minat">
+    <div class="wrap">
+      <div class="heading"><span class="eyebrow">THINGS I LOVE</span><h2>My Interests</h2><p>Hal-hal yang ingin aku pelajari dan kembangkan.</p></div>
+      <div class="grid3">
+        <article class="interest"><div class="icon">01</div><h3>Technology</h3><p>Mengenal teknologi dan memahami cara kerja komputer serta jaringan.</p></article>
+        <article class="interest"><div class="icon">02</div><h3>Web Development</h3><p>Belajar membuat website yang menarik, nyaman digunakan, dan bermanfaat.</p></article>
+        <article class="interest"><div class="icon">03</div><h3>Learning New Things</h3><p>Mencoba hal baru, menambah pengetahuan, dan mengembangkan kemampuan diri.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="content" id="keahlian">
+    <div class="wrap">
+      <div class="heading"><span class="eyebrow">MY LEARNING JOURNEY</span><h2>Skills & Learning</h2><p>Kemampuan yang sedang aku pelajari.</p></div>
+      <div class="skills-box"><h3>Things I'm Exploring</h3><div class="skills">
+        <span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">Computer Networking</span><span class="skill">Basic Programming</span><span class="skill">Problem Solving</span><span class="skill">Creative Thinking</span>
+      </div></div>
+    </div>
+  </section>
+  <section class="content" id="cita-cita">
+    <div class="wrap">
+      <div class="heading"><span class="eyebrow">MY FUTURE</span><h2>Dream Big, Start Small</h2><p>Setiap langkah kecil punya arti.</p></div>
+      <div class="goal"><div class="goal-mark">MY FUTURE</div><h3>Future Programmer</h3><p>Aku ingin menjadi programmer yang mampu membuat website dan aplikasi yang bermanfaat. Aku tahu masih banyak hal yang perlu dipelajari, tetapi aku percaya bahwa konsistensi, usaha, dan rasa ingin tahu akan membantuku berkembang sedikit demi sedikit.</p><br><p><strong>One day, I'll be proud of how far I've come.</strong></p></div>
+    </div>
+  </section>
+</main>
+<footer><h3>Profile Sri Mulyani</h3><p>Made with dreams and a simple and elegant design.</p><p>© 2026 My Profile</p></footer>
+</body>
+</html>
